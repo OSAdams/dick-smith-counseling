@@ -1,2 +1,2 @@
-# dick-smith-counseling
-A business/blog website to help clients interact with the counselor.
+# Smith Counseling Centre
+## Serving the Oakland and Wayne County Community
