@@ -1,10 +1,14 @@
 .container {
   text-align: center;
   width: 100%;
-  background-color:
+  background-color: rgb(41 68 100);
 }
 
-.sub-container {
+.row {
   width: 80%;
   margin: auto;
+}
+
+.col-half {
+  width: 50%;
 }
