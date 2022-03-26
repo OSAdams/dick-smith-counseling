@@ -28,10 +28,10 @@ class App extends React.Component {
 
   render() {
     return (
-      <>
+      <div className="container">
         <Nav />
         <Home />
-      </>
+      </div>
     )
   }
 }

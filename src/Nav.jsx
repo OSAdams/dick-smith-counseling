@@ -8,8 +8,6 @@ export default class Nav extends React.Component {
   }
   render() {
     return (
-      <>
-        <div className="container">
           <header className="row nav-bar flex">
             <div className="col-half nav-title">
               <h1>Smith Counseling Centre</h1>
@@ -21,8 +19,6 @@ export default class Nav extends React.Component {
               <a className= "nav-link" href="google.com">Inquire</a>
             </div>
           </header>
-        </div>
-      </>
     );
   }
 }
