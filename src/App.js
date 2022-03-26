@@ -8,7 +8,10 @@ function App() {
           <h1>Smith Counseling Centre</h1>
         </div>
         <div className="col-half">
-
+          <a href="google.com">Test</a>
+          <a href="google.com">Test</a>
+          <a href="google.com">Test</a>
+          <a href="google.com">Test</a>
         </div>
       </header>
     </div>
