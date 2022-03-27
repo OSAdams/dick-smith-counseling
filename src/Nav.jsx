@@ -5,12 +5,17 @@ export default class Nav extends React.Component {
   constructor(props) {
     super(props);
     this.state = { navigation: null }
+    this.onClick = this.onClick.bind(this);
   }
 
-  isActive() {
+  onClick(event) {
     const navLinks = document.querySelectorAll('.nav-link')
+    console.log(event.target)
     for (let navLinkIndex = 0; navLinkIndex < navLinks.length; navLinkIndex++) {
-
+      const userNavClick = navLinks[navLinkIndex].textContent
+      if (event.target.textContent === userNavClick) {
+        window.location.hash = '#' + userNavClick
+      }
     }
   }
 
@@ -21,10 +26,14 @@ export default class Nav extends React.Component {
               <h1>Smith Counseling Centre</h1>
             </div>
             <div className="col-half nav-link-list">
-              <a className="nav-link" href="google.com">Home</a>
-              <a className="nav-link" href="google.com">Information</a>
-              <a className="nav-link" href="google.com">Contact</a>
-              <a className="nav-link" href="google.com">Inquire</a>
+              <span className="nav-link"
+                onClick={ this.onClick }>Home</span>
+              <span className="nav-link"
+                onClick={ this.onClick }>Information</span>
+              <span className="nav-link"
+                onClick={ this.onClick }>Contact</span>
+              <span className="nav-link"
+                onClick={ this.onClick }>Inquire</span>
             </div>
           </header>
     );

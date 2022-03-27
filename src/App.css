@@ -25,6 +25,10 @@
   align-items: center;
 }
 
+.nav-title {
+  text-align: left;
+}
+
 .nav-link-list {
   display: flex;
   justify-content: space-evenly;
@@ -32,6 +36,5 @@
 }
 
 .nav-link {
-  text-decoration: none;
-  color: #252525;
+  cursor: pointer;
 }
