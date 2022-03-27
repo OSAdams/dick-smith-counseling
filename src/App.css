@@ -25,7 +25,7 @@
   align-items: center;
 }
 
-.nav-links {
+.nav-link-list {
   display: flex;
   justify-content: space-evenly;
   font-size: larger;
@@ -33,4 +33,5 @@
 
 .nav-link {
   text-decoration: none;
+  color: #252525;
 }
